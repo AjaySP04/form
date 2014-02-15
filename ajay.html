@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Registration Form</title>
+		<style>
+		     html , body {
+		     	width:100%;
+		     	height: 100%;
+		     	background-color: red;
+		     }
+			div#footer {
+				position: fixed;
+				clear: both;
+				bottom: 2px;
+				width: 100%;
+			}
+		</style>
+		<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1">
+	</head>
+	<body "bgcolor="#ccffcc" link ="#663333" >
+	<form method="POST" action="register.asp">
+	<table width="100%" border="0"><tr>
+	<td width="98%" valign="top" height="247">
+	<table width="100%" border="0" bordercolordark="#cc9966" bordercolorlight="#cc9966">
+	<tr valign="top" bgcolor="Red"><td>
+	<p align="center"><b><font face="Arial, Helvetica,sans-serif" size="+1"
+	color="#ffffff"> REGISTER HERE </font></b></p></td></tr>
+	<tr valign="top"><td><table border="0" width="100%">
+	<tr bordercolor="cc9966" bgcolor="#ffcc99">
+	<td align="right" width="100%" colspan="2">
+	<div align="left"><b><font face="arial, Helvetica, sans-serif" color="ffffff">
+	<font color="#663333" size="+1">PLESE FILL IN CONTACT DATA
+	</font></font></b></div></td></tr>
+	<div align="center"><img src="JEC-logo-gray5.gif" width="200" height="120"></div>
+	<tr bordercolor="#cc9966" bgcolor="ffcc99">
+	<td align="right" width="39%">
+	<div align="center"><font color="#663333" size="-1" face="arial, helvetica, sans-serif">
+	<b>I am a   STUDENT<input type="radio" name="borS" value="User" checked>
+	ADMIN<input type="radio" name="BorS" value="Source"></font></font></b></div>
+	</td><td align="right" width="61%"></td></tr>
+	<tr><td width="39%" align="right"><font face="arial,Helvetica, sans-serif" color="#663333" size="-1">
+	<b>Frist and Last name:</b></font></td>
+	<td width="61%"><input type="text" name="FirstName" size="20" tabindex="1">
+	<input type="text" name="LastName" size="20" tabindex="2">
+	</td></tr>
+	<tr><td width="39%" align="right"><font face="arial, Helvetica, sans-serif" color="663333" size="-1">
+	<b>Address:</b></font></td>
+	<td width="61%"><input type="text" name="Address" size="40" tabindex="3"></td></tr>
+	<tr><td width="39%" align="right"><font face="Arial, helvetica, sans-serif" color="#663333" size="-1">
+	<b>City, State, Zip:</b></font></td>
+	<td width="61%"><input type="text" name="City" size="20" maxlength="20">
+	<input type="text" name="ZipCode" size="10" tabindex="5"></td></tr><tr>
+	<td width="39%" align="right"><font face="Arial, Helvetica, sans-serif" color="#663333" size="-1">
+	<b>Phone, Fax:</b></font></td>
+	<td width="61%"><input type="text" name="Phone" Size="20" tabindex="6">
+	<input type="text" name="Fax" size="20" tabindex="7"></td></tr><tr>
+	<td width="39%" align="right"><font face="Arial, helvetica, sans-serif" color="#663333" Size="-1">
+	<b>Email:</b></font></td>
+	<td width="61%"><input type="text" name="Email" size="40"></td></tr>
+	<tr><td width="100%" align="right" bgcolor="#ffcc99" colspan="2">
+	<div align="left"><font face="arial, helvetica, sans-serif"  color="#663333" size="-1">
+	<b><font face="arial, helvetica, sans-serif" size="+1" color="#ffffff">
+	<font color="#663333">CHOOSE USER NAME/ PASSWORD</font></font></b></font></div></td></tr>
+	<tr>
+		<td width="39%" align="right"><font face="Arial, helvetica, sans-serif" color="#663333" size"-1"> <b>User Name, Password:</b></font></td>
+		<td width="61%">
+		<input type="text" name="UserName" size="20" tabindex="15">
+		<input type="password" class="input-block-level" name="pwd" placeholder="password">
+		</td>
+	</tr>
+	<tr bordercolor="#cc9966" bgcolor="#ffcc99">
+		<td width="39%" align="right"><font face="Arial, Helvetica, sans-serif" color="#663333" size="-1"> <b> How Did You Find Us? </b> </font></td>
+		<td width="61%">
+		<select name="HowFound">
+			<option value="SearchEngine" selected> Search Engine</option>
+			<option value="Newspaper">Newspaper</option>
+			<option value="Magazine"></option>
+			<option value="Radio">Radio</option>
+			<option value="TV">TV</option>
+			<option value="Other">Other</option>
+		</select>
+		<input type="submit" value="Submit" name="B1">
+		<input type="reset" value="Reset" name="B2">
+		</td>
+	</tr></table></table></td></tr></table>
+	</form>
+	<script src="core-dojo.js">
+	</script>
+	<div id="footer">
+		copyright &copy; 2013 Ajay Singh & Team
+	</div>
+	</body>
+</html>
