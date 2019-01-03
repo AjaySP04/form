@@ -1,0 +1,37 @@
+<head>
+	<link href="./css/ajax_button.css" rel="stylesheet" />
+	<script src="./scripts/formValidator.js"></script>
+</head>
+<body>
+<div>
+	<button id="btn" class='btn' onclick="openForm()"><span>Open Form</span></button>
+</div>
+<div class="formPopup" id="sigupForm">		
+	<form method='post' action='./signup.html' onsubmit='this.checkForm()'>
+		<h2 align='center'>SignUp</h2>
+		<p>
+			<input type='text' name='usrname' placeholder='Username' >
+		</p>
+		<p>
+			<input type='password' name='pwd' placeholder='Password' >
+		</p>
+		<p>
+			<input type='password' name='cnfpwd' placeholder='Confirm Password' >
+		</p>
+		<p>
+			<input type='email' name='email' placeholder='Email' >
+		</p>
+		<p>
+			<button type='submit' id='btn' class='btn-submit' onclick=" return checkForm()">
+				<span>Register Here</span>
+			</button>
+		</p>
+		<p>
+			<button type='submit' id='btn' class='btn' onclick="closeForm()" required>
+				<span>Close</span>
+			</button>
+		</p>
+		<p>Already a customer? <a href="./login.html">Login here</a></p>
+	</form>
+</div>
+</body>
