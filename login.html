@@ -1,0 +1,33 @@
+<head>
+	<link href="./css/ajax_button.css" rel="stylesheet" />
+</head>
+<body>
+<div>
+	<button id="btn" class='btn' onclick="openForm()">Open Form</button>
+</div>
+<div class="formPopup" id="sigupForm">		
+	<form method='post' action='./ajax_learn.html' onsubmit='return checkForm(this)'>
+		<h2 align='center'>Login</h2>
+		<p>
+			<input type='text' name='usrname' placeholder='Username' required>
+		</p>
+		<p>
+			<input type='password' name='pwd' placeholder='Password' required>
+		</p>
+		<p>
+			<button type='submit' id='btn' class='btn-submit' onclick="checkForm()" required>
+				<span>Login</span>
+			</button>
+		</p>
+		<p>
+			<button type='submit' id='btn' class='btn' onclick="closeForm()" required>
+				<span>Close</span>
+			</button>
+		</p>
+		<p>Not Registered Yet? <a href="./signup.html">Sign Up here</a></p>
+	</form>
+	
+</div>
+
+<script src="./scripts/formValidator.js"></script>
+</body>
